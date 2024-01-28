@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show current student name"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:textColor="@color/purple_700"
+        android:id="@+id/stuName"/>
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Complete the task of this lesson"
+        android:textSize="22sp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Please record the student’s class status."
+        android:id="@+id/notes"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:onClick="saveAttendance"
+        android:id="@+id/saveButton"/>
+</LinearLayout>
